@@ -50,52 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // Widget buildCategoryList() {
-  //   return Container(
-  //     padding: const EdgeInsets.only(left: 10),
-  //     margin: const EdgeInsets.only(top: 20, bottom: 20),
-  //     height: 30,
-  //     child: ListView.builder(
-  //       shrinkWrap: true,
-  //       scrollDirection: Axis.horizontal,
-  //       itemBuilder: (context, index) {
-  //         return Row(
-  //           children: [
-  //             GestureDetector(
-  //               onTap: () {
-  //                 if (categories[index] == category) {
-  //                   BlocProvider.of<NewsCubit>(context)
-  //                       .getArticles(category: category);
-  //                   _onSelected(index);
-  //                 } else {
-  //                   BlocProvider.of<NewsCubit>(context)
-  //                       .getBusinessArticles(category: 'business');
-  //                   _onSelected(index);
-  //                 }
-  //               },
-  //               child: CategoryItem(
-  //                 text: categories[index],
-  //                 selectedIndex: _selectedIndex,
-  //                 index: index,
-  //               ),
-  //             ),
-  //             const SizedBox(
-  //               width: 10,
-  //             )
-  //           ],
-  //         );
-  //       },
-  //       itemCount: categories.length,
-  //     ),
-  //   );
-  // }
-
-  // _onSelected(int index) {
-  //   setState(() {
-  //     _selectedIndex = index;
-  //   });
-  // }
-
   Widget buildLoadedList() {
     return ListView.builder(
       shrinkWrap: true,
